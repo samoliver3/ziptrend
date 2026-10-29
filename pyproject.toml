@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ziptrend"
+version = "0.1.0"
+description = "Explore US ZIP-code observations across geography and time"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Sam Oliver" }]
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2,<4", "numpy>=1.26", "pgeocode>=0.5,<0.6", "openpyxl>=3.1", "xlrd>=2.0"]
+keywords = ["zip code", "geospatial", "time series", "dashboard", "census"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+[project.optional-dependencies]
+# The dashboard and map charts; the data API works without them.
+app = ["plotly>=5.24,<8", "streamlit>=1.53,<2"]
+dev = ["ziptrend[app]", "pytest>=8.2", "build>=1"]
+
+[project.scripts]
+ziptrend = "ziptrend.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ziptrend = ["assets/*.geojson", "assets/*.md"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

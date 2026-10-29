@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.geocache/
+.tmp/
+*.log
+# Local screenshots
+/*.png
