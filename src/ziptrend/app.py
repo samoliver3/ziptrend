@@ -27,7 +27,6 @@ h1 {letter-spacing: -1.5px;}
 }
 </style>""", unsafe_allow_html=True)
 st.caption("ZIPTREND  /  U.S. DATA EXPLORER")
-st.title("Every ZIP has a story.")
 st.write("Explore where values concentrate and how they change over time.")
 
 

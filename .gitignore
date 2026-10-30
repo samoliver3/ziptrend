@@ -9,3 +9,5 @@ build/
 *.log
 # Local screenshots
 /*.png
+.env
+.vscode/
