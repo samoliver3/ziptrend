@@ -2,7 +2,7 @@
 
 A Python package and local browser dashboard for exploring numeric observations by U.S. ZIP code and time.
 
-![ZIPtrend dashboard showing Colorado ZIP markers, population summary metrics, and the monthly map timeline in dark mode](docs/images/dashboard.png)
+![ZIPtrend dashboard showing Colorado ZIP markers, population summary metrics, and the monthly map timeline in dark mode](https://raw.githubusercontent.com/samoliver3/ziptrend/master/docs/images/dashboard.png)
 
 *Colorado demo view for May 2025, using fictional population data. Move the timeline to explore changes over time.*
 
