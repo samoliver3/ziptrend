@@ -26,6 +26,11 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 
+[project.urls]
+Homepage = "https://github.com/samoliver3/ziptrend"
+Source = "https://github.com/samoliver3/ziptrend"
+Issues = "https://github.com/samoliver3/ziptrend/issues"
+
 [project.optional-dependencies]
 # The dashboard and map charts; the data API works without them.
 app = ["plotly>=5.24,<8", "streamlit>=1.53,<2"]
